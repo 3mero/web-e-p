@@ -41,7 +41,7 @@ const en = {
   mobileView: "Mobile view",
   noPreview: "No preview available",
   clickRunForPreview: 'Click the "Run" button above to generate a preview',
-  previewOnVercel: "Preview will automatically run when deployed to Vercel",
+  previewOnVercel: "لا تنسى ذكر الله",
 
   // Binary files
   binaryFile: "Binary File",
@@ -105,7 +105,7 @@ const ar = {
   mobileView: "عرض الجوال",
   noPreview: "المعاينة غير متوفرة",
   clickRunForPreview: 'انقر على زر "تشغيل" أعلاه لإنشاء معاينة',
-  previewOnVercel: "ستعمل المعاينة تلقائيًا عند رفعها إلى Vercel",
+  previewOnVercel: "لا تنسى ذكر الله",
 
   // Binary files
   binaryFile: "ملف ثنائي",

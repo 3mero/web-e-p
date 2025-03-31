@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 38%; /* #616161 - Light gray */
+    --foreground: 0 0% 93%; /* #EEEEEE - Light white */
+    --card: 0 0% 42%; /* Slightly lighter than background */
+    --card-foreground: 0 0% 93%;
+    --popover: 0 0% 42%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 200 18% 70%; /* #B0BEC5 - Light blue-gray */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 45%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 0 0% 45%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 0 0% 45%;
+    --accent-foreground: 0 0% 93%;
+    --destructive: 0 62% 65%;
+    --destructive-foreground: 0 0% 93%;
+    --border: 0 0% 45%;
+    --input: 0 0% 45%;
+    --ring: 200 18% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.rtl .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+.rtl .mr-4 {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* Smooth theme transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Basic syntax highlighting styles */
+.token.comment {
+  color: #6a9955;
+}
+.token.string {
+  color: #ce9178;
+}
+.token.number {
+  color: #b5cea8;
+}
+.token.boolean {
+  color: #569cd6;
+}
+.token.keyword {
+  color: #569cd6;
+}
+.token.function {
+  color: #dcdcaa;
+}
+.token.class-name {
+  color: #4ec9b0;
+}
+.token.property {
+  color: #9cdcfe;
+}
+.token.tag {
+  color: #569cd6;
+}
+.token.attr-name {
+  color: #9cdcfe;
+}
+.token.punctuation {
+  color: #d4d4d4;
+}
+.token.operator {
+  color: #d4d4d4;
+}
+.token.color {
+  color: #ce9178;
+}
+
+/* Dark theme adjustments */
+.dark .token.comment {
+  color: #6a9955;
+}
+.dark .token.string {
+  color: #ce9178;
+}
+.dark .token.number {
+  color: #b5cea8;
+}
+.dark .token.boolean {
+  color: #569cd6;
+}
+.dark .token.keyword {
+  color: #569cd6;
+}
+.dark .token.function {
+  color: #dcdcaa;
+}
+.dark .token.class-name {
+  color: #4ec9b0;
+}
+.dark .token.property {
+  color: #9cdcfe;
+}
+.dark .token.tag {
+  color: #569cd6;
+}
+.dark .token.attr-name {
+  color: #9cdcfe;
+}
+.dark .token.punctuation {
+  color: #d4d4d4;
+}
+.dark .token.operator {
+  color: #d4d4d4;
+}
+.dark .token.color {
+  color: #ce9178;
+}
+
+/* Light theme adjustments */
+:not(.dark) .token.comment {
+  color: #008000;
+}
+:not(.dark) .token.string {
+  color: #a31515;
+}
+:not(.dark) .token.number {
+  color: #098658;
+}
+:not(.dark) .token.boolean {
+  color: #0000ff;
+}
+:not(.dark) .token.keyword {
+  color: #0000ff;
+}
+:not(.dark) .token.function {
+  color: #795e26;
+}
+:not(.dark) .token.class-name {
+  color: #267f99;
+}
+:not(.dark) .token.property {
+  color: #001080;
+}
+:not(.dark) .token.tag {
+  color: #800000;
+}
+:not(.dark) .token.attr-name {
+  color: #ff0000;
+}
+:not(.dark) .token.punctuation {
+  color: #000000;
+}
+:not(.dark) .token.operator {
+  color: #000000;
+}
+:not(.dark) .token.color {
+  color: #a31515;
+}
+
